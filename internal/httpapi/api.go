@@ -20,6 +20,7 @@ type API struct {
 func New(svc *billing.Service) *API { return &API{svc: svc} }
 
 func (a *API) Register(app *fiber.App) {
+	a.registerPlayground(app)
 	app.Get("/health", func(c *fiber.Ctx) error {
 		return c.JSON(fiber.Map{"status": "ok"})
 	})
