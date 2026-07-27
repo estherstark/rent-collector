@@ -74,6 +74,9 @@ func (a *API) listLeases(c *fiber.Ctx) error {
 	if err != nil {
 		return fail(c, err)
 	}
+	if leases == nil {
+		leases = []billing.Lease{} // JSON [] instead of null for empty lists
+	}
 	return c.JSON(leases)
 }
 
@@ -117,6 +120,9 @@ func (a *API) listInvoices(c *fiber.Ctx) error {
 	invoices, err := a.svc.ListInvoices(c.Query("month"))
 	if err != nil {
 		return fail(c, err)
+	}
+	if invoices == nil {
+		invoices = []billing.Invoice{} // JSON [] instead of null for empty lists
 	}
 	return c.JSON(invoices)
 }
