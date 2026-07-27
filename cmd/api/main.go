@@ -8,9 +8,9 @@ import (
 	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/fiber/v2/middleware/recover"
 
-	"github.com/haveanerdday/rent-collector/internal/billing"
-	"github.com/haveanerdday/rent-collector/internal/httpapi"
-	"github.com/haveanerdday/rent-collector/internal/store"
+	"github.com/estherstark/rent-collector/internal/billing"
+	"github.com/estherstark/rent-collector/internal/httpapi"
+	"github.com/estherstark/rent-collector/internal/store"
 )
 
 func main() {

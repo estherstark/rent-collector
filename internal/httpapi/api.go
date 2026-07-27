@@ -10,7 +10,7 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 
-	"github.com/haveanerdday/rent-collector/internal/billing"
+	"github.com/estherstark/rent-collector/internal/billing"
 )
 
 type API struct {

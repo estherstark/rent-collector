@@ -8,7 +8,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/haveanerdday/rent-collector/internal/billing"
+	"github.com/estherstark/rent-collector/internal/billing"
 )
 
 // Memory implements billing.LeaseRepo, billing.InvoiceRepo and

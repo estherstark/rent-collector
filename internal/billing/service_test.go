@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/haveanerdday/rent-collector/internal/billing"
-	"github.com/haveanerdday/rent-collector/internal/store"
+	"github.com/estherstark/rent-collector/internal/billing"
+	"github.com/estherstark/rent-collector/internal/store"
 )
 
 func newService(t *testing.T) *billing.Service {

@@ -1,4 +1,4 @@
-module github.com/haveanerdday/rent-collector
+module github.com/estherstark/rent-collector
 
 go 1.26.5
 
